@@ -3,11 +3,15 @@ FROM node:20-slim as build
 
 WORKDIR /app
 
-# Copy package files
+# Copy package files and install dependencies
 COPY package*.json ./
+RUN npm ci
 
-# Copy the built files
-COPY out/ ./out/
+# Copy source files
+COPY . .
+
+# Build the application
+RUN npm run build
 
 # Production stage
 FROM nginx:alpine
