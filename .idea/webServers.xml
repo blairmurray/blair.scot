@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="23f25b57-b4cf-4098-ba01-520640ee2b4e" name="blair.scot" url="https://blair.scot">
+        <fileTransfer accessType="SFTP" host="bmur.uk" port="22" sshConfigId="e581d716-2b61-4ef7-a07f-040dd790d495" sshConfig="blair.scot">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
