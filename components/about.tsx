@@ -19,30 +19,39 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        I graduated from{" "}
+        <span className="font-medium">Heriot-Watt University</span> in Edinburgh
+        with a 2:1 in Computer Science, and have spent the past{" "}
+        <span className="font-medium">10+ years</span> working as a software
+        engineer.{" "}
+        <span className="italic">My favourite part of the job</span> is
+        untangling complex problems — whether that&apos;s designing a data pipeline
+        or architecting a new web application. I{" "}
+        <span className="underline">love</span> the moment a tricky solution
+        finally clicks into place.
+      </p>
+
+      <p className="mb-3">
+        I currently work as{" "}
+        <span className="font-medium">Lead Software Engineer</span> at{" "}
+        <span className="font-medium">Millersoft Ltd</span>, where I lead
+        development across a range of projects — from full-stack web apps to{" "}
+        <span className="font-medium">data integration</span>, ETL pipelines,
+        data vaults, lakes, and warehouses. My go-to stack includes{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, TypeScript, and Node.js
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        , alongside specialist data tooling like{" "}
+        <span className="font-medium">
+          Apache Hop, Apache Spark, and Apache Druid
+        </span>
+        .
       </p>
 
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I&apos;m also
-        learning how to play the guitar.
+        <span className="italic">When I&apos;m not at a keyboard</span>, you&apos;ll
+        find me exploring the Scottish outdoors, keeping up with the latest in
+        tech, and tinkering with self-hosted services at home.
       </p>
     </motion.section>
   );

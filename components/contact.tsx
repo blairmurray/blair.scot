@@ -37,8 +37,9 @@ export default function Contact() {
             or through LinkedIn{" "}
             <a
                 className="bg-white p-2 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 ml-2"
-                href="www.linkedin.com/in/murrayblair"
+                href="https://www.linkedin.com/in/murrayblair"
                 target="_blank"
+                rel="noopener noreferrer"
             >
                 <BsLinkedin/>
             </a>
