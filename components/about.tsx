@@ -48,6 +48,13 @@ export default function About() {
         .
       </p>
 
+      <p className="mb-3">
+        The way developers code has changed. AI is not how I build, but it is
+        now a fundamental part of the work. I write the prompts and the
+        restrictions, then read and test what an agent produces before it
+        ships.
+      </p>
+
       <p>
         <span className="italic">When I&apos;m not at a keyboard</span>, you&apos;ll
         find me exploring the Scottish outdoors, keeping up with the latest in

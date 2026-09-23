@@ -1,7 +1,13 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaDatabase, FaJava, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import {
+  LuBookOpen,
+  LuGraduationCap,
+  LuPencil,
+  LuShield,
+  LuTestTube,
+} from "react-icons/lu";
 import {
   SiApache,
   SiApachedruid,
@@ -118,6 +124,31 @@ export const skillsData = [
       { name: "PostgreSQL", icon: React.createElement(SiPostgresql) },
       { name: "MySQL", icon: React.createElement(SiMysql) },
     ],
+  },
+  {
+    title: "AI",
+    description:
+      "AI is not how I build. It is now part of it. The way developers code has changed, and this is fundamental.",
+    practices: [
+      {
+        icon: React.createElement(LuPencil),
+        text: "Prompts that spell out the outcome, the constraints, and what must stay as it is.",
+      },
+      {
+        icon: React.createElement(LuShield),
+        text: "Defensive restrictions so the agent stays inside the task.",
+      },
+      {
+        icon: React.createElement(LuBookOpen),
+        text: "I read what it wrote until I understand it. If I cannot explain the change, it does not stay.",
+      },
+      {
+        icon: React.createElement(LuTestTube),
+        text: "I test what an agent writes. Testing is part of the change, not a follow-up.",
+      },
+    ],
+    tools: ["Cursor", "Antigravity", "Codex", "Claude", "Gemini"],
+    skills: [],
   },
   {
     title: "Web",
