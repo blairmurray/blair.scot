@@ -30,23 +30,42 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
-      </ul>
+      <div className="flex flex-col gap-8">
+        {skillsData.map((group, groupIndex) => {
+          const indexOffset = skillsData
+            .slice(0, groupIndex)
+            .reduce((total, item) => total + item.skills.length, 0);
+
+          return (
+            <div key={group.title}>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-white/60">
+                {group.title}
+              </h3>
+              <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+                {group.skills.map((skill, skillIndex) => {
+                  const index = indexOffset + skillIndex;
+
+                  return (
+                    <motion.li
+                      className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                      key={skill}
+                      variants={fadeInAnimationVariants}
+                      initial="initial"
+                      whileInView="animate"
+                      viewport={{
+                        once: true,
+                      }}
+                      custom={index}
+                    >
+                      {skill}
+                    </motion.li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

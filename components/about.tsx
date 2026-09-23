@@ -22,7 +22,7 @@ export default function About() {
         I graduated from{" "}
         <span className="font-medium">Heriot-Watt University</span> in Edinburgh
         with a 2:1 in Computer Science, and have spent the past{" "}
-        <span className="font-medium">10+ years</span> working as a software
+        <span className="font-medium">12 years</span> working as a software
         engineer.{" "}
         <span className="italic">My favourite part of the job</span> is
         untangling complex problems — whether that&apos;s designing a data pipeline

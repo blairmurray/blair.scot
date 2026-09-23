@@ -40,6 +40,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/murrayblair"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
             >
                 <BsLinkedin/>
             </a>

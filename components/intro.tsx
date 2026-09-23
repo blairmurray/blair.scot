@@ -29,13 +29,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/macey.jpg"
-              alt="Blair portrait"
-              width="250"
-              height="250"
-              quality="95"
-              priority={true}
-              className="h-29 w-29 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              src="/blair.jpg"
+              alt="Blair Murray"
+              width={250}
+              height={250}
+              quality={95}
+              priority
+              className="h-[250px] w-[250px] rounded-full object-cover object-center border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -61,10 +61,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I&apos;m Blair.</span> I&apos;m a{" "}
-        <span className="font-bold">software developer</span> with{" "}
-        <span className="font-bold">10 years</span> of experience. I enjoy
-        building <span className="italic">sites, apps and anything that peaks my interest</span>. My focus is{" "}
-        <span className="underline">Data Integration</span>.
+        <span className="font-bold">lead software engineer</span> based in
+        Scotland with <span className="font-bold">12 years</span> of
+        experience. I enjoy building{" "}
+        <span className="italic">
+          sites, apps, and anything that piques my interest
+        </span>
+        . My focus is <span className="underline">data integration</span>.
       </motion.h1>
 
       <motion.div
@@ -93,6 +96,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/murrayblair"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
           <BsLinkedin />
         </a>
@@ -102,6 +106,7 @@ export default function Intro() {
           href="https://github.com/blairmurray"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
           <FaGithubSquare />
         </a>
