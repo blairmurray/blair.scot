@@ -1,7 +1,28 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaDatabase, FaJava, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import {
+  SiApache,
+  SiApachedruid,
+  SiApachespark,
+  SiCss3,
+  SiDocker,
+  SiFastify,
+  SiGit,
+  SiHtml5,
+  SiJavascript,
+  SiMysql,
+  SiNextdotjs,
+  SiNginx,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import carcheckmateImg from "@/public/carcheckmate.jpg";
 
 export const links = [
@@ -84,21 +105,51 @@ export const projectsData = [
 export const skillsData = [
   {
     title: "Data platforms",
+    description:
+      "Pipelines, vaults, lakes, and warehouses, and the databases behind them.",
     skills: [
-      "Apache Hop",
-      "Apache Spark",
-      "Apache Druid",
-      "Pentaho Data Integration",
-      "PostgreSQL",
-      "MySQL",
+      { name: "Apache Hop", icon: React.createElement(SiApache) },
+      { name: "Apache Spark", icon: React.createElement(SiApachespark) },
+      { name: "Apache Druid", icon: React.createElement(SiApachedruid) },
+      {
+        name: "Pentaho Data Integration",
+        icon: React.createElement(FaDatabase),
+      },
+      { name: "PostgreSQL", icon: React.createElement(SiPostgresql) },
+      { name: "MySQL", icon: React.createElement(SiMysql) },
+    ],
+  },
+  {
+    title: "Web",
+    description: "The application stack I use to ship products on top of that data.",
+    skills: [
+      { name: "React", icon: React.createElement(SiReact) },
+      { name: "Next.js", icon: React.createElement(SiNextdotjs) },
+      { name: "Node.js", icon: React.createElement(SiNodedotjs) },
+      { name: "Fastify", icon: React.createElement(SiFastify) },
+      { name: "Tailwind", icon: React.createElement(SiTailwindcss) },
+      { name: "Prisma", icon: React.createElement(SiPrisma) },
+      { name: "HTML", icon: React.createElement(SiHtml5) },
+      { name: "CSS", icon: React.createElement(SiCss3) },
     ],
   },
   {
     title: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python", "Java"],
+    description: "What I write day to day.",
+    skills: [
+      { name: "TypeScript", icon: React.createElement(SiTypescript) },
+      { name: "JavaScript", icon: React.createElement(SiJavascript) },
+      { name: "Python", icon: React.createElement(SiPython) },
+      { name: "Java", icon: React.createElement(FaJava) },
+    ],
   },
   {
-    title: "Web",
-    skills: ["React", "Next.js", "Node.js", "HTML", "CSS", "Git"],
+    title: "Tools",
+    description: "How the sites and pipelines get built and served.",
+    skills: [
+      { name: "Docker", icon: React.createElement(SiDocker) },
+      { name: "Nginx", icon: React.createElement(SiNginx) },
+      { name: "Git", icon: React.createElement(SiGit) },
+    ],
   },
 ] as const;
