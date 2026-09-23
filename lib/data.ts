@@ -1,5 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import carcheckmateImg from "@/public/carcheckmate.jpg";
 
@@ -41,13 +42,31 @@ export const experiencesData = [
     date: "June 2014",
   },
   {
+    title: "Graduate Software Engineer",
+    company: "Millersoft Ltd",
+    location: "Musselburgh, Scotland",
+    description:
+      "I worked as a graduate developer for a year at Millersoft before being promoted to Software Engineer.",
+    icon: React.createElement(CgWorkAlt),
+    date: "August 2014 - July 2015",
+  },
+  {
+    title: "Software Engineer",
+    company: "Millersoft Ltd",
+    location: "Musselburgh, Scotland",
+    description:
+      "For two years I worked as a software engineer, mainly in data integration.",
+    icon: React.createElement(CgWorkAlt),
+    date: "August 2015 - July 2017",
+  },
+  {
     title: "Lead Software Engineer",
     company: "Millersoft Ltd",
     location: "Musselburgh, Scotland",
     description:
-      "I joined as a graduate in 2014, became a software engineer in 2015, and have led engineering since 2017. The work is full-stack web apps, ETL and data integration, and data platforms: vaults, lakes, and warehouses, including Millersoft's open-source Data Vault engine and studio on Apache Hop.",
-    icon: React.createElement(CgWorkAlt),
-    date: "August 2014 - Present",
+      "Since August 2017 I have led engineering at Millersoft, across full-stack web apps, ETL and data integration, and data platforms: vaults, lakes, and warehouses, including the open-source Data Vault engine and studio on Apache Hop.",
+    icon: React.createElement(FaReact),
+    date: "August 2017 - Present",
   },
 ] as const;
 
